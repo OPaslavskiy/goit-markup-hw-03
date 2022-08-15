@@ -33,13 +33,16 @@ ul {
 /* --header-- */
 
 .conteiner {
-  display: flex;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  outline: 1px solid rgb(248, 135, 135);
 }
 
+.header-conteiner {
+  display: flex;
+}
 .site-nav,
 .nav {
   display: flex;
@@ -128,6 +131,7 @@ ul {
 /* body */
 
 .hero {
+  margin-bottom: 60px;
   background-color: #2f303a;
   height: 600px;
   text-align: center;
@@ -163,7 +167,24 @@ ul {
   background: #188ce8;
 }
 
+.benefits {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.benefits .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.benefits .item:last-child {
+  margin-right: 0;
+}
+
 .benefits-titel {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -174,12 +195,52 @@ ul {
   line-height: 1.71;
 }
 
+.titel-none {
+  display: none;
+}
+
+.benefits,
+.what-doing {
+  padding: 0;
+}
+
+.benefits-section,
+.what-doing-section {
+  margin-bottom: 94px;
+}
+
 /* Чим ми займаємося */
 .titel-section {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--titel-color);
+  margin-bottom: 50px;
+}
+
+.what-doing img {
+  display: block;
+  margin: 0;
+}
+
+.what-doing {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.what-doing .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.what-doing .item:last-child {
+  margin-bottom: 0;
+}
+
+.team {
+  display: flex;
 }
 
 .team-name {
