@@ -30,6 +30,14 @@ ul {
   margin: 0;
 }
 
+ul {
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 /* --header-- */
 
 .conteiner {
@@ -39,12 +47,27 @@ ul {
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   /* outline: 1px solid rgb(248, 135, 135); */
 }
 
 .header-conteiner {
   display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
+
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
 .site-nav,
 .nav {
   display: flex;
@@ -61,7 +84,6 @@ ul {
 
 .contact-header {
   display: flex;
-  padding-left: 0;
   margin-left: auto;
 }
 
@@ -83,6 +105,7 @@ ul {
   color: #000000;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .web {
@@ -107,8 +130,8 @@ ul {
   color: var(--accent-color);
 }
 
-.studio,
-.portfolio {
+.studio-link,
+.portfolio-link {
   color: var(--accent-color);
 }
 
@@ -133,9 +156,7 @@ ul {
 /* body */
 
 .hero {
-  margin-bottom: 60px;
   background-color: #2f303a;
-  height: 600px;
   text-align: center;
 }
 
@@ -159,9 +180,9 @@ ul {
   color: #fff;
   cursor: pointer;
   border: 0;
-  min-width: 216px;
-  height: 50px;
+  padding: 10px 32px;
   border-radius: 4px;
+  margin-bottom: 200px;
 }
 
 .hero-btn:hover,
@@ -169,7 +190,9 @@ ul {
   background: #188ce8;
 }
 
-.benefits {
+.benefits,
+.what-doing,
+.team {
   display: flex;
   margin-left: -15px;
   margin-right: -15px;
@@ -198,22 +221,12 @@ ul {
   line-height: 1.71;
 }
 
+.benefits-section {
+  padding-bottom: 0;
+}
+
 .titel-none {
   display: none;
-}
-
-.benefits,
-.what-doing,
-.team,
-.list-adress,
-.portfolio-button,
-.portfolio {
-  padding: 0;
-}
-
-.benefits-section,
-.what-doing-section {
-  margin-bottom: 94px;
 }
 
 /* Чим ми займаємося */
@@ -225,19 +238,6 @@ ul {
   margin-bottom: 50px;
 }
 
-.what-doing img,
-.team img,
-..portfolio img {
-  display: block;
-  margin: 0;
-}
-
-.what-doing {
-  display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 .what-doing .item {
   width: calc((100% - 60px) / 3);
   margin-right: 15px;
@@ -246,12 +246,6 @@ ul {
 
 .what-doing .item:last-child {
   margin-bottom: 0;
-}
-
-.team {
-  display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .team .item {
@@ -277,14 +271,6 @@ ul {
   padding-bottom: 30px;
 }
 
-.team-titel {
-  padding-top: 94px;
-}
-
-.team-section {
-  margin-bottom: 94px;
-}
-
 .address {
   font-style: normal;
   line-height: 1.71;
@@ -296,6 +282,14 @@ ul {
 
 .footer {
   background-color: #2f303a;
+}
+
+.footer-nav {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-logo,
@@ -357,7 +351,6 @@ ul {
 }
 
 .portfolio-titel {
-  margin-top: 20px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -370,11 +363,6 @@ ul {
   color: var(--text-color);
   margin-bottom: 20px;
   margin-top: 4px;
-}
-
-.portfolio-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .portfolio-button {
@@ -402,6 +390,25 @@ ul {
 .portfolio .item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-card {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
 }
 
 .portfolio .item:nth-child(3n) {
