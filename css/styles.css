@@ -359,20 +359,19 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--titel-color);
-  padding-top: 20px;
 }
 
 .portfolio-description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
-  padding-bottom: 20px;
   margin-top: 4px;
 }
 
 .portfolio-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-button .portfolio-btn {
@@ -380,7 +379,6 @@ img {
   padding: 6px 25px;
   border: none;
   border-radius: 4px;
-  margin-bottom: 50px;
 }
 
 .portfolio-button:last-child {
@@ -414,13 +412,10 @@ img {
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #eeeeee;
+
+  padding: 20px 24px;
 }
 
 .portfolio .item:nth-child(3n) {
   margin-right: 0;
-}
-
-.portfolio-titel,
-.portfolio-description {
-  margin-left: 24px;
 }
