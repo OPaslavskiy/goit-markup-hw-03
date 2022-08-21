@@ -5,12 +5,9 @@
   --footer-color: rgba(255, 255, 255, 0.6);
 }
 
-.link {
+a {
   text-decoration: none;
-}
-
-.list {
-  list-style: none;
+  color: inherit;
 }
 
 body {
@@ -32,10 +29,25 @@ ul {
 
 ul {
   padding-left: 0;
+  list-style: none;
 }
 
 img {
   display: block;
+}
+
+.titel-none {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* --header-- */
@@ -220,10 +232,6 @@ img {
 
 .benefits-text {
   line-height: 1.71;
-}
-
-.titel-none {
-  visibility: hidden;
 }
 
 /* Чим ми займаємося */
