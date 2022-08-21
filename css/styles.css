@@ -5,6 +5,10 @@
   --footer-color: rgba(255, 255, 255, 0.6);
 }
 
+html {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -34,6 +38,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .titel-none {
